@@ -85,6 +85,10 @@ img {
     width: 90%;
 }
 
+.crear__forget {
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+}
 .crear__boton {
     background-color: #48b42c;
     border: none;
@@ -93,5 +97,5 @@ img {
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
-    padding: 1.6rem;
+    padding: 1rem 2rem;
 }
