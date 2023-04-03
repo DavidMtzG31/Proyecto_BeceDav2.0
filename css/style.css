@@ -45,11 +45,17 @@ img {
     width: 32rem;
     padding-bottom: 2rem;
 }
+
 .login__header {
+    font-weight: 600;
     text-align: center;
     font-weight: lighter;
     font-size: 1.5rem;
     padding: 1rem;
+}
+@media (min-width: 768px) {
+    .login__header {
+    }
 }
 
 .login__form, 
